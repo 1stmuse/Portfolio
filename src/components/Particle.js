@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 export default class Particle extends Component {
     render(){
         return(
-            <Particles className='app'
+            <Particles className='particles'
                 params={{
                     "particles": {
                       "number": {

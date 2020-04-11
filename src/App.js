@@ -33,7 +33,6 @@ class App extends Component  {
           {about? <About/> : <Tech/>}
         </div>
         <button onClick={this.clickTech} >home</button>
-        <button>tech</button>
       </div>
     );
   }

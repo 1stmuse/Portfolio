@@ -10,7 +10,91 @@
 
 .app{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 80vmin;
+  width: 80%;
+  margin: 20px auto;
+  height: 500px;
+  box-sizing: border-box;
+  border: 1px solid green;
 }
+
+.about-comp, .tech-comp{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid red;
+  overflow: hidden;
+  right: 2%;
+}
+.about-comp{
+  top: 40%;
+}
+.tech-comp{
+  top: 20%;
+}
+
+.about-anim{
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  height: 400px;
+  background-color: tomato;
+  transition: position 2s ease-in-out;
+  animation: show 1s ease;
+  animation-timing-function: ease-in;
+}
+@keyframes show{
+  from{
+    /* width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    right: 5%; */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid red;
+    overflow: hidden;
+    right: 2%;
+  }
+  /* 25%{
+    height: auto;
+    width: auto;
+    right: 10%;
+    background-color: tomato;
+    border-radius: 3%;
+  } */
+  /* 50%{
+    height: auto;
+    width: auto;
+    right: 15%;
+    background-color: tomato;
+    border-radius: 3%;
+  } */
+  /* 75%{
+    height: auto;
+    width: auto;
+    right: 20%;
+    background-color: tomato;
+    border-radius: 3%;
+  }  */
+  to{
+    height: 400px;
+    width: 400px;
+    right: 30%;
+    background-color: tomato;
+    border-radius: 3%;
+  }
+  /* to{
+    width: 400px;
+    height: 400px;
+    right: 30%;
+    background-color: tomato;
+    border-radius: 3%;
+  } */
+}
+

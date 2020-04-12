@@ -24,13 +24,14 @@ class App extends Component  {
   render(){
     const {tech, about} = this.state
     return (
-      <div>
+      <div style={{position:'relative', height:'100vh'}}>
         <Particles>
   
         </Particles>
         <Header/>
         <div className='app'>
-          {about? <About/> : <Tech/>}
+          <div className={about?'about-comp': 'about-anim'}><About/> </div>
+          <div className={tech?'tech-anim': 'tech-comp'}><Tech/></div>
         </div>
         <button onClick={this.clickTech} >home</button>
       </div>

@@ -6,20 +6,6 @@
 
 .tech{
     @include margins(40px, 30px, block);
-    border: 1px solid blue;
-    height: 400px;
+    width: 600px;
+    height: 500px;
 }
-
-@keyframes hide {
-    0% {
-      display: block;
-      opacity: 1;
-    }
-    99% {
-      display: block;
-    }
-    100% {
-      display: none;
-      opacity: 0;
-    }
-  }

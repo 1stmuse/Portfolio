@@ -3,29 +3,29 @@ import React, {Component} from 'react';
 import './App.css';
 import Particles from './components/Particle'
 import {About} from './components/about/About'
-import {Tech} from './components/tech/Tech'
+import {Tech} from './components/projects/Tech'
 
 class App extends Component  {
   
   constructor(){
     super()
     this.state={
-      tech:false,
-      about:true
+      left:0
     }
   }
 
 
   render(){
     return (
-      <div style={{position:'relative', height:'100vh'}}>
+      <div>
         <Particles>
   
         </Particles>
-        <Header/>
         <div className='app'>
-          <div> <About/> </div>
-          <div> <Tech/></div>
+          <div className='container' style={{transform:`translateX(${this.state.left}vw)`}}>
+            <div className='about-slide' > <About/> </div>
+            <div className='project-slide'><Tech/></div>
+          </div>
         </div>
       </div>
     );

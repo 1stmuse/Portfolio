@@ -13,9 +13,11 @@ class App extends Component  {
   
         </Particles>
         <div className='app'>
+
           <About/>
-            <Tech/>
-         </div> 
+          <Tech/>
+        </div> 
+
       </div>
     );
   }

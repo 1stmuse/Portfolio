@@ -22,9 +22,9 @@ class App extends Component  {
   
         </Particles>
         <div className='app'>
-          <div className='container' style={{transform:`translateX(${this.state.left}vw)`}}>
-            <div className='about-slide' > <About/> </div>
-            <div className='project-slide'><Tech/></div>
+          <div className='container'>
+            <About/> 
+            <Tech/>
           </div>
         </div>
       </div>

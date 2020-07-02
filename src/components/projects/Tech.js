@@ -1,5 +1,4 @@
 import React from 'react'
-import './tech.css'
 
 
 export const Tech = ({tech}) =>{

@@ -1,0 +1,113 @@
+@mixin flex ($flex, $direction, $jcontent, $aself, $width, $position) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $jcontent;
+    align-items: $aself;
+    width: $width;
+    position: $position;
+}
+.about{
+    @include flex(flex, row, center, flex-start,100vw,relative );
+    height: 90vh;
+    color: #fff;
+        .intro{
+            margin-top: 14%;
+                .el-div{
+                    height: 70px;
+                    // border: 1px solid blue;
+                    overflow: hidden;
+                }
+                .para-div{
+                    overflow: hidden;
+                }
+                h2{
+                    font-size: 2em;
+                        .name{
+                            color: #4236eb;
+                            font-weight: 900;
+                        }
+                        .hello{
+                            font-size: .7em;
+                        }
+                }
+                p{
+                    width: 300px;
+                    margin-top: 30px;
+                    font-weight: 500;
+                }
+        }
+        .about-rh{
+            position: absolute;
+            // border: none;
+        }
+        .sm{
+            top: 15%;
+            height: 300px;
+            border-radius: 50%;
+            // border:30px solid #4236eb;
+            border: 25px solid black;
+            border-left-color: #4236eb;
+            border-top-color: #4236eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -100px;
+            z-index: -1;
+            width: 300px;
+            // background-color:#4236eb ;
+            .sm-inner{
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                z-index: -5;
+                // background-color: black;
+                // border-width: 50px;
+            }
+        }
+        .md{
+            // border: 25px solid #d8eb0b;
+            border: 25px solid black;
+            border-left-color: #4236eb;
+            border-top-color: #4236eb;
+            top: 40%;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -40px;
+            width: 300px;
+            // background-color: #d8eb0b;
+            .md-inner{
+                border-radius: 50%;
+                width: 250px;
+                height: 250px;
+                background-color: black;
+                z-index: -3;
+            }
+        }
+        .lg{
+            top: 75%;
+            height: 30px;
+            right: 0;
+            width: 500px;
+            background-color: #05f028;
+        }
+        .icons{
+            @include flex(flex, column, space-between, none,30px,absolute );
+            height: 150px;
+            left: 18px;
+            top: 72%;
+                .icon{
+                    color: #fff;
+                }
+        }
+        .vert{
+            height: 65%;
+            width: 2px;
+            background-color: white;
+            top: 20px;
+            left: 30px;
+            position: absolute;
+        }
+}

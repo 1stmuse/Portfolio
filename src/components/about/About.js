@@ -1,26 +1,22 @@
 import React, {useRef, useEffect} from 'react'
-import {TimelineLite, Power3, Linear} from 'gsap'
+import {TimelineLite} from 'gsap'
 
 export const About = () =>{
     let intro = useRef(null)
     let sm = useRef(null)
     let md = useRef(null)
-    let lg = useRef(null)
     let hello = useRef(null)
     let para = useRef(null)
-    let smInner = useRef(null)
 
     useEffect(()=>{
         let tl = new TimelineLite()
         console.log(intro)
 
-        tl.from(hello,{y:'80px', duration:.9}, 'start')
-            .from(para, {y:100, duration:.7}, .2)
+        tl.from(hello,{y:'80px', duration:.9},'start')
+            .from(para, {y:100, duration:.9}, .2)
 
-        tl.from(md,{rotate:360, repeat:1000, ease:Linear.easeNone, duration:1.5 },.2, 'start')
-            .from(sm,{rotate:-360, repeat:1000, ease:Linear.easeNone, duration:1.5},.4)
-            .from(smInner,{zIndex:-1,duration:3})
-            // .from(lg,{x:1000,}, .6)
+        tl.fromTo(sm,{x:'-80%',opacity:0},{x:0,opacity:1, ease:"elastic.out(1, 1)", duration:1.2, delay:.5 }, 'start')
+            .from(md,{ x:'80%', ease:"elastic.out(1, 1)", duration:1, delay:.5},.1)
     },[])
 
     return(
@@ -44,18 +40,10 @@ export const About = () =>{
                 <a href="https://www.github.com/1stmuse"><i className="fa fa-github fa-2x icon" aria-hidden="true"></i></a>
                 <a href="https://www.github.com/1stmuse"><i className="fa fa-instagram fa-2x icon" aria-hidden="true"></i></a>
             </div>
-            <div className='about-rh sm' ref={el=>sm=el} >
-                <div className='sm-inner' ref={el => smInner=el} ></div>
-            </div>
-            <div className='about-rh md' ref={el=>md=el} >
-                <div className='md-inner'></div>
-            </div>
-            {/* <div className='about-rh lg' ref={el=>lg=el} >
-                <div className='lg-inner'></div>
-            </div> */}
+            <div className='about-rh sm' ref={el=>sm=el} > </div>
+            <div className='about-rh md' ref={el=>md=el} >  </div>
 
             <div className='left-vert vert'></div>
-            {/* <div className='right-vert vert'></div> */}
         </div>
     )
 }

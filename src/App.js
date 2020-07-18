@@ -15,7 +15,7 @@ class App extends Component  {
         <div className='app'>
 
           <About/>
-          <Tech/>
+          {/* <Tech/> */}
         </div> 
 
       </div>

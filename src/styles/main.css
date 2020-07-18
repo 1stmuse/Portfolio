@@ -9,25 +9,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   position: relative;
-  height: 90vh;
+  height: 100vh;
+  overflow: hidden;
+  border: 1px solid green;
   color: #fff;
-}
-
-.about .intro {
-  margin-top: 14%;
 }
 
 .about .intro .el-div {
   height: 70px;
   overflow: hidden;
+  z-index: 20;
 }
 
 .about .intro .para-div {
+  margin-top: 20px;
   overflow: hidden;
 }
 
@@ -55,67 +55,23 @@
 }
 
 .about .sm {
-  top: 15%;
+  top: -20%;
   height: 300px;
   border-radius: 50%;
-  border: 25px solid black;
-  border-left-color: #4236eb;
-  border-top-color: #4236eb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  right: -100px;
+  border: 70px solid #271a40;
+  left: -8%;
   z-index: -1;
   width: 300px;
 }
 
-.about .sm .sm-inner {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  z-index: -5;
-}
-
 .about .md {
-  border: 25px solid black;
-  border-left-color: #4236eb;
-  border-top-color: #4236eb;
+  border: 130px solid #100721;
   top: 40%;
-  height: 300px;
+  height: 500px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  right: -40px;
-  width: 300px;
-}
-
-.about .md .md-inner {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  background-color: black;
-  z-index: -3;
-}
-
-.about .lg {
-  top: 75%;
-  height: 30px;
-  right: 0;
+  right: -10%;
+  z-index: -1;
   width: 500px;
-  background-color: #05f028;
 }
 
 .about .icons {
@@ -144,10 +100,10 @@
 }
 
 .about .vert {
-  height: 65%;
+  height: 30%;
   width: 2px;
-  background-color: white;
-  top: 20px;
+  background-color: #fff;
+  top: 40%;
   left: 30px;
   position: absolute;
 }
@@ -162,7 +118,7 @@
 html {
   position: relative;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .particles {
@@ -171,7 +127,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100%;
+  height: 100vh;
   background-color: black;
   z-index: -1;
 }

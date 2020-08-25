@@ -36,7 +36,7 @@
 }
 
 .about .intro h2 .name {
-  color: #4236eb;
+  color: #271a40;
   font-weight: 900;
 }
 
@@ -48,6 +48,37 @@
   width: 300px;
   margin-top: 30px;
   font-weight: 500;
+}
+
+.about .intro .links {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  position: relative;
+}
+
+.about .intro .links .project-btn, .about .intro .links .writing-btn {
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #271a40;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.about .intro .links .project-btn {
+  margin-right: 30px;
 }
 
 .about .about-rh {
@@ -106,6 +137,90 @@
   top: 40%;
   left: 30px;
   position: absolute;
+}
+
+@media screen and (max-width: 850px) {
+  .sm {
+    top: -30% !important;
+    left: -18% !important;
+  }
+  .md {
+    top: 60% !important;
+    right: -30% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sm {
+    top: -30% !important;
+    left: -22% !important;
+  }
+  .md {
+    top: 70% !important;
+    right: -50% !important;
+    border: 100px solid #271a40 !important;
+  }
+  .icons {
+    height: 100px !important;
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .sm {
+    top: -30% !important;
+    left: -22% !important;
+  }
+  .md {
+    top: 80% !important;
+    right: -70% !important;
+    border: 100px solid #271a40 !important;
+  }
+  .olu {
+    display: block;
+    color: white;
+  }
+  .el-div {
+    height: 120px !important;
+    border: 1px solid red;
+  }
+}
+
+.tech {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+}
+
+.back-arrow i {
+  font-size: 40px;
+  width: 40px;
+}
+
+h3 {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  list-style: none;
+  pointer-events: none;
+}
+
+.lists li {
+  width: 20%;
+  translate: scaleY(0);
+  background-color: #271a40;
 }
 
 * {

@@ -1,26 +1,26 @@
 
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import Particles from './components/Particle'
-import {About} from './components/about/About'
-import {Tech} from './components/projects/Tech'
+import {About} from './components/About'
+import {Tech} from './components/Tech'
 
-class App extends Component  {
-  
-  render(){
-    return (
-      <div>
-        <Particles>
-  
-        </Particles>
-        <div className='app'>
-
-          <About/>
-          {/* <Tech/> */}
-        </div> 
-
-      </div>
-    );
+const App =()=> {
+  const [pro, setPro]= useState(true)
+  const showProject =(arg)=>{
+    setPro(arg)
   }
+  
+  return (
+    <div>
+      <Particles>
+
+      </Particles>
+      <div className='app'>
+        {!pro ? <About pro={showProject} /> : <Tech pro={showProject}/>}
+      </div> 
+
+    </div>
+  );
 }
 
 export default App;

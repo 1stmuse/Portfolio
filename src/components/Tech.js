@@ -46,8 +46,8 @@ export const Tech = ({pro}) =>{
                 <li ></li>
                 <li ></li>
             </ul>
-            <div className='back-arrow' onClick={show} ><i className='fa fa-long-arrow-left' style={{cursor:'pointer'}} ></i></div>
-            <h3>Here are some of the projects i've worked on !</h3>
+            <div className='back-arrow' onClick={show} ><i className='fa fa-long-arrow-left' style={{cursor:'pointer',marginLeft:'40px'}} ></i></div>
+            <h3 className='h3'>Here are some of the projects i've worked on !</h3>
             <div className='project-grid'>
                 {showProjects()}
             </div>

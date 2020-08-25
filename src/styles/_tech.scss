@@ -2,6 +2,7 @@
 .tech{
     min-height: 100vh;
     min-width: 100vw;
+    padding-top: 20px;
     color: white;
 }
 
@@ -14,6 +15,7 @@
 h3{
     width: 70%;
     margin: 20px auto;
+    text-align: center;
 }
 
 .lists{
@@ -31,5 +33,54 @@ h3{
         width: 20%;
         translate: scaleY(0);
         background-color: #271a40;
+    }
+}
+.project-grid{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 40px;
+    // border: 1px solid yellow;
+    display: grid;
+    justify-items: center !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .card{
+        max-width: 200px;
+        height: 270px;
+        margin-bottom: 30px;
+        // border: 1px solid blue;
+        .img-div{
+            width: 100%;
+            height: 120px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            margin-bottom: 10px;
+        }
+        .descrip{
+            margin-bottom: 30px;
+            height: 70px;
+            a{cursor: pointer;}
+            p:first-child{
+                margin-bottom: 10px;
+            }
+            p:nth-child(2){
+                font-style: italic;
+                color: grey;
+                margin-bottom: 20px;
+            }
+        }
+        .nav-icons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            a i{
+                color: #ffffff;
+            }
+            a:nth-child(2) i{
+                font-size: 30px;
+                margin-left: 15px;
+            }
+        }
     }
 }

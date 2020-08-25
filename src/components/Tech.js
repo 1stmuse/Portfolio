@@ -1,6 +1,8 @@
 import React, {useEffect,useRef} from 'react'
 import {TimelineLite} from 'gsap'
 
+import {projects} from '../data'
+
 export const Tech = ({pro}) =>{
 
     const show=()=>{
@@ -10,6 +12,24 @@ export const Tech = ({pro}) =>{
             pro(false)
         }, 520)
         // pro(false)
+    }
+
+    const showProjects =()=>{
+       return projects.map(pro=>(
+            <div key={pro.id} className='card'>
+                <div className='img-div'>
+                    <img src={pro.img} alt='alternative display'/>
+                </div>
+                <div className='descrip'>
+                    <p>{pro.description} </p>
+                    <p><i>{pro.tech} </i></p>
+                </div>
+                <div className='nav-icons'>
+                    <a target='_blanck' href="https://www.github.com/1stmuse"><i className="fa fa-github fa-2x icon" aria-hidden="true"></i></a>
+                    <a target='_blanck' href={pro.url} ><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        ))
     }
 
     useEffect(()=>{
@@ -26,11 +46,10 @@ export const Tech = ({pro}) =>{
                 <li ></li>
                 <li ></li>
             </ul>
-            <div className='back-arrow' onClick={show} ><i className='fa fa-long-arrow-left'></i></div>
+            <div className='back-arrow' onClick={show} ><i className='fa fa-long-arrow-left' style={{cursor:'pointer'}} ></i></div>
             <h3>Here are some of the projects i've worked on !</h3>
             <div className='project-grid'>
-                <h2>whats up people of the world</h2>
-                <p>A self taught fullstack developer Yeahh</p>
+                {showProjects()}
             </div>
         </div>
     )

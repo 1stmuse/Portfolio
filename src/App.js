@@ -5,7 +5,7 @@ import {About} from './components/About'
 import {Tech} from './components/Tech'
 
 const App =()=> {
-  const [pro, setPro]= useState(true)
+  const [pro, setPro]= useState(false)
   const showProject =(arg)=>{
     setPro(arg)
   }

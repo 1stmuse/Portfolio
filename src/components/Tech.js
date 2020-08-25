@@ -25,7 +25,7 @@ export const Tech = ({pro}) =>{
                     <p><i>{pro.tech} </i></p>
                 </div>
                 <div className='nav-icons'>
-                    <a target='_blanck' href="https://www.github.com/1stmuse"><i className="fa fa-github fa-2x icon" aria-hidden="true"></i></a>
+                    <a target='_blanck' href={pro.github} ><i className="fa fa-github fa-2x icon" aria-hidden="true"></i></a>
                     <a target='_blanck' href={pro.url} ><i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
             </div>

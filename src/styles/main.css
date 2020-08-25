@@ -14,9 +14,7 @@
           align-items: center;
   width: 100vw;
   position: relative;
-  height: 100vh;
   overflow: hidden;
-  border: 1px solid green;
   color: #fff;
 }
 
@@ -27,21 +25,23 @@
 }
 
 .about .intro .para-div {
-  margin-top: 20px;
   overflow: hidden;
 }
 
-.about .intro h2 {
-  font-size: 2em;
+.about .intro .h2-name {
+  margin-top: 0px;
 }
 
-.about .intro h2 .name {
+.about .intro .h2-name .name {
   color: #271a40;
+  font-size: 1.5em;
   font-weight: 900;
 }
 
-.about .intro h2 .hello {
-  font-size: .7em;
+.about .intro .h2-name .hello {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .about .intro p {
@@ -97,7 +97,7 @@
 
 .about .md {
   border: 130px solid #100721;
-  top: 40%;
+  top: 60%;
   height: 500px;
   border-radius: 50%;
   right: -10%;
@@ -151,18 +151,24 @@
 }
 
 @media screen and (max-width: 600px) {
+  .about {
+    padding-left: 10px;
+  }
   .sm {
     top: -30% !important;
     left: -22% !important;
   }
   .md {
-    top: 70% !important;
-    right: -50% !important;
+    top: 75% !important;
+    right: -60% !important;
     border: 100px solid #271a40 !important;
   }
   .icons {
     height: 100px !important;
     margin-top: 40px !important;
+  }
+  .links {
+    width: 80% !important;
   }
 }
 
@@ -254,8 +260,8 @@
 }
 
 .project-grid .card .descrip {
-  margin-bottom: 30px;
-  height: 70px;
+  margin-bottom: 10px;
+  max-height: 150px;
 }
 
 .project-grid .card .descrip a {
@@ -263,13 +269,14 @@
 }
 
 .project-grid .card .descrip p:first-child {
+  max-height: 80px;
   margin-bottom: 10px;
 }
 
 .project-grid .card .descrip p:nth-child(2) {
   font-style: italic;
   color: grey;
-  margin-bottom: 20px;
+  height: 40px;
 }
 
 .project-grid .card .nav-icons {
@@ -298,6 +305,21 @@
     width: 90% !important;
     margin: 20px auto !important;
     text-align: center !important;
+  }
+  .card {
+    margin-bottom: 70px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project-grid {
+    width: 100%;
+  }
+  .card {
+    max-width: 70% !important;
+  }
+  .img-div {
+    height: 150px !important;
   }
 }
 

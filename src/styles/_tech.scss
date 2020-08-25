@@ -58,16 +58,20 @@
             margin-bottom: 10px;
         }
         .descrip{
-            margin-bottom: 30px;
-            height: 70px;
+            margin-bottom: 10px;
+            max-height: 150px;
+            // border: 1px solid orangered;
             a{cursor: pointer;}
             p:first-child{
+                max-height: 80px;
+                // border: 1px solid greenyellow;
                 margin-bottom: 10px;
             }
             p:nth-child(2){
+                // border: 1px solid blue;
                 font-style: italic;
                 color: grey;
-                margin-bottom: 20px;
+                height: 40px;
             }
         }
         .nav-icons{
@@ -90,5 +94,19 @@
         width: 90% !important;
         margin: 20px auto !important ;
         text-align: center !important;
+    }
+    .card{
+        margin-bottom: 70px !important;
+    }
+}
+@media screen and (max-width:450px){
+    .project-grid{
+        width: 100%;
+    }
+    .card{
+        max-width: 70% !important;
+    }
+    .img-div{
+        height: 150px !important;
     }
 }

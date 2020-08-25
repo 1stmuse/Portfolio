@@ -24,13 +24,13 @@ export const About = ({pro}) =>{
     },[])
 
     return(
-        <div className='about'>
+        <div className='about' style={{height:window.innerHeight}} >
             <div className='intro' ref={el=> intro=el} >
                 <div className='el-div' >
-                    <h2 ref={el=>hello=el} className='h2-name' >
-                        <span className='hello' >Hello, i am </span> <br/>
+                    <p ref={el=>hello=el} className='h2-name' >
+                        <span className='hello' >Hello, i am </span>
                         <span className='name'>Akinnagbe <span className='olu'>Oluwasegun</span>.</span>
-                    </h2>
+                    </p>
                 </div>
                 <div className='para-div'>
                     <p className='para' ref={el =>para=el}>I am a software engineer based in Lagos state,

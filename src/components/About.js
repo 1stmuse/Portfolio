@@ -39,13 +39,13 @@ export const About = ({pro}) =>{
                 </div>
                 <div className='links'>
                     <div className='project-btn' ref={el=>pBtn=el} onClick={()=>pro(true)} >Projects</div>
-                    <div className='writing-btn' ref={el=>wBtn=el} >Writings</div>
+                    <div className='writing-btn' ref={el=>wBtn=el} ><a href="https://dev.to/1stmuse" target='blanck' >Writings</a></div>
                 </div>
             </div>
             <div className='icons'>
-                <a href="https://www.linkedin.com/in/akinnagbe-oluwasegun-8b9b6b51"><i className="fa fa-linkedin fa-2x icon" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/1st_muse"><i className="fa fa-twitter fa-2x icon" aria-hidden="true"></i></a>
-                <a href="https://www.github.com/1stmuse"><i className="fa fa-github fa-2x icon" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/akinnagbe-oluwasegun-8b9b6b51" target='blanck' ><i className="fa fa-linkedin fa-2x icon" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/1st_muse" target='blanck' ><i className="fa fa-twitter fa-2x icon" aria-hidden="true"></i></a>
+                <a href="https://www.github.com/1stmuse" target='blanck' ><i className="fa fa-github fa-2x icon" aria-hidden="true"></i></a>
             </div>
             <div className='about-rh sm' ref={el=>sm=el} > </div>
             <div className='about-rh md' ref={el=>md=el} >  </div>

@@ -88,6 +88,13 @@
   margin-right: 30px;
 }
 
+.about .intro .links .writing-btn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: white;
+}
+
 .about .about-rh {
   position: absolute;
 }

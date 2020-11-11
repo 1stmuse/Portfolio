@@ -29,7 +29,7 @@ export const About = ({pro}) =>{
                 <div className='el-div' >
                     <p ref={el=>hello=el} className='h2-name' >
                         <span className='hello' >Hello, i am </span>
-                        <span className='name'>Akinnagbe <span className='olu'>Oluwasegun</span>.</span>
+                        <p className='name'>Akinnagbe <span className='olu'>Oluwasegun</span>.</p>
                     </p>
                 </div>
                 <div className='para-div'>
@@ -43,7 +43,7 @@ export const About = ({pro}) =>{
                 </div>
             </div>
             <div className='icons'>
-                <a href="https://facebook.com/olysegs"><i className="fa fa-facebook fa-2x icon" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/akinnagbe-oluwasegun-8b9b6b51"><i className="fa fa-linkedin fa-2x icon" aria-hidden="true"></i></a>
                 <a href="https://www.twitter.com/1st_muse"><i className="fa fa-twitter fa-2x icon" aria-hidden="true"></i></a>
                 <a href="https://www.github.com/1stmuse"><i className="fa fa-github fa-2x icon" aria-hidden="true"></i></a>
             </div>

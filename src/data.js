@@ -1,7 +1,7 @@
 export const projects = [
     {
         id:1,
-        description:'A PWA that uses an API to provide report on the Covid-19 cases through the world',
+        description:'A PWA that uses an API to provide report on the Covid-19 cases throughout the world',
         tech:'react, google-react-map, chartjs',
         img:require('./images/covid.png'),
         url:'https://cv19-tracker.netlify.app',
@@ -10,7 +10,7 @@ export const projects = [
     {
         id:2,
         description:'A React app that detects the face in an image making use of the clarifai API',
-        tech:'react, clarifai, node, tachyons',
+        tech:'react, clarifai, node, tachyons, node, express, mongoDB',
         img:require('./images/detect.png'),
         url:'https://github.com/1stmuse/face-recognition-app',
         github:'https://github.com/1stmuse/covid-tracker'

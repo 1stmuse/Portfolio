@@ -8,16 +8,11 @@
 }
 .about{
     @include flex(flex, row, center, center,100vw,relative );
-    // height: 100vh;
     overflow: hidden;
-    // border: 1px solid green;
     color: #fff;
         .intro{
-            // border: 1px solid orangered;
                 .el-div{
                     height: 70px;
-                    // min-width:300px;
-                    // border: 1px solid blue;
                     overflow: hidden;
                     z-index: 20;
                 }
@@ -25,21 +20,25 @@
                     overflow: hidden;
                 }
                 .h2-name{
-                    margin-top: 0px;
-                        .name{
-                            color: #271a40;
-                            // color: #100721;
-                            font-size: 1.5em;
-                            font-weight: 900;
-                        }
-                        .hello{
-                            font-size: 1.2em;
-                            display: block;
-                            margin-bottom: 5px;
-                        }
+                    max-width: 350px;
+                    margin-top: 10px;
+                    font-weight: 500;
+                    color: white;
+                    .name{
+                        display: flex;
+                        justify-content: space-around;
+                        // -webkit-text-stroke: 2px #271a40;
+                        font-size: 2em;
+                        font-weight: 900;
+                    }
+                    .hello{
+                        font-size: 1.2em;
+                        display: block;
+                        margin-bottom: 5px;
+                    }
                 }
-                p{
-                    width: 300px;
+                p.para{
+                    max-width: 350px;
                     margin-top: 30px;
                     font-weight: 500;
                 }
@@ -60,7 +59,6 @@
         }
         .about-rh{
             position: absolute;
-            // border: none;
         }
         .sm{
             top: -20%;
@@ -119,6 +117,12 @@
         left: -22% !important;
 
     }
+    .hello{
+        margin-left: 10px;
+    }
+    .name{
+        font-size: 1.5em !important;
+    }
     .md{
         top: 75% !important;
         right: -60% !important;
@@ -145,10 +149,8 @@
     }
    .olu{
        display: block;
-       color: white;
    }
-   .el-div{
-       height: 120px !important;
-       border: 1px solid red;
-   }
+   .name{
+    font-size: 1.5em !important;
+    }
 }

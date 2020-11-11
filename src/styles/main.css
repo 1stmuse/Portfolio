@@ -29,12 +29,19 @@
 }
 
 .about .intro .h2-name {
-  margin-top: 0px;
+  max-width: 350px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: white;
 }
 
 .about .intro .h2-name .name {
-  color: #271a40;
-  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2em;
   font-weight: 900;
 }
 
@@ -44,8 +51,8 @@
   margin-bottom: 5px;
 }
 
-.about .intro p {
-  width: 300px;
+.about .intro p.para {
+  max-width: 350px;
   margin-top: 30px;
   font-weight: 500;
 }
@@ -158,6 +165,12 @@
     top: -30% !important;
     left: -22% !important;
   }
+  .hello {
+    margin-left: 10px;
+  }
+  .name {
+    font-size: 1.5em !important;
+  }
   .md {
     top: 75% !important;
     right: -60% !important;
@@ -184,11 +197,9 @@
   }
   .olu {
     display: block;
-    color: white;
   }
-  .el-div {
-    height: 120px !important;
-    border: 1px solid red;
+  .name {
+    font-size: 1.5em !important;
   }
 }
 
@@ -228,7 +239,7 @@
 .lists li {
   width: 20%;
   translate: scaleY(0);
-  background-color: #271a40;
+  background-color: black;
 }
 
 .project-grid {
@@ -244,7 +255,13 @@
 
 .project-grid .card {
   max-width: 200px;
-  height: 270px;
+  min-height: 270px;
+  border: 1px solid black;
+  -webkit-box-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+          box-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
   margin-bottom: 30px;
 }
 

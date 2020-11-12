@@ -12,8 +12,8 @@ export const projects = [
         description:'A React app that detects the face in an image making use of the clarifai API',
         tech:'react, clarifai, node, tachyons, node, express, mongoDB',
         img:require('./images/detect.png'),
-        url:'https://github.com/1stmuse/face-recognition-app',
-        github:'https://github.com/1stmuse/covid-tracker'
+        url:'https://face-dtect.herokuapp.com',
+        github:'https://github.com/1stmuse/face-recognition-app'
     },
     {
         id:3,
